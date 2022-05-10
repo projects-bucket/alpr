@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Speech Emotion Recognition</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/register.css') }}"
+    />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    {% block content %}
+    <p>News html page</p>
+    <h2>Submit your favorite restaurant!</h2>
+    <form method="post" action="/submit">
+      <p>Name: <input type="text" name="name" /></p>
+      <p>Address: <input type="text" name="address" /></p>
+      <p><input type="submit" /></p>
+    </form>
+    {% endblock %}
+  </body>
+</html>

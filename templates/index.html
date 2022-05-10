@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "bootstrap/base.html" %}
+
+<!------------------------------------------------------------------------------------------>
+<!------------------------------      Nav bar start        --------------------------------->
+<!------------------------------------------------------------------------------------------>
+{% block navbar %} {{nav.top.render()}}
+<center>
+  <div class="di">
+    <h3>Welcome to Stolen Vehicle Management</h3>
+    <p>
+      Navigation bar gives you the features to extract <br />number plate and
+      find the stolen vehicle
+    </p>
+    <p>Find Tab : To display stolen vehicle detail</p>
+    <p>Register Tab: To register Stolen Vehicles</p>
+  </div>
+</center>
+{% endblock %}
+<!------------------------------------------------------------------------------------------>
+<!------------------------------       Nav bar end         --------------------------------->
+<!------------------------------------------------------------------------------------------>
